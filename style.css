@@ -6,5 +6,17 @@
 
 body {
   height: 100vh;
-  background: rgb(211, 149, 90);  
+  background: rgb(248, 245, 245);  
+}
+
+.board {
+  width: 640px;
+  height: 640px;
+  display: flex;
+  border: 2px solid black;
+}
+
+img {
+  width: 100px;
+
 }

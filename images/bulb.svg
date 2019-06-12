@@ -1,0 +1,15 @@
+<svg width="512" height="512" xmlns="http://www.w3.org/2000/svg">
+
+ <g>
+  <title>background</title>
+  <rect fill="none" id="canvas_background" height="402" width="582" y="-1" x="-1"/>
+ </g>
+ <g>
+  <title stroke="#003f7f">Layer 1</title>
+  <path stroke-miterlimit="10" stroke-linecap="square" stroke-width="20" stroke="#003f7f" fill="none" id="svg_1" d="m321.5,383.5l-131,0c-11,0 -20,-9 -20,-20l0,-2c0,-11 9,-20 20,-20l131,0c11,0 20,9 20,20l0,2c0,11 -9,20 -20,20z" class="st0"/>
+  <path stroke-miterlimit="10" stroke-linecap="square" stroke-width="20" stroke="#003f7f" fill="none" id="svg_2" d="m267.5,469l-23,0c-17.399994,0 -31.5,-14.100006 -31.5,-31.5l0,-53.5l86,0l0,53.5c0,17.399994 -14.100006,31.5 -31.5,31.5z" class="st0"/>
+  <path stroke-miterlimit="10" stroke-linecap="square" stroke-width="20" stroke="#003f7f" fill="none" id="svg_3" d="m213,337c-28.600006,-29.100006 -84,-85.899994 -84,-135.5c0,-87.5 35,-158.5 127,-158.5c94,0 127,71 127,158.5c0,50.300003 -54.700012,106.5 -84,135.5" class="st0"/>
+  <rect stroke-miterlimit="10" stroke-linecap="square" stroke-width="20" stroke="#003f7f" fill="none" id="svg_4" y="171" x="219" width="74" height="170" class="st0"/>
+  <path stroke-miterlimit="10" stroke-linecap="square" stroke-width="20" stroke="#003f7f" fill="none" id="svg_5" d="m223,175l66.600006,36.399994c1.5,0.900009 1.5,3 0,3.900009l-68,39.199997c-1.200012,0.699997 -1.200012,2.399994 0,3l68,39.200012c1.5,0.899994 1.5,3 0,3.899994l-70.600006,36.399994" class="st0"/>
+ </g>
+</svg>
