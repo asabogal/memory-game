@@ -20,7 +20,7 @@ body {
 .card {
   position: relative;
   width: 25%;
-  height: 33.333%;
+  height: 25%;
   border: 2px solid red;
 }
 
