@@ -18,18 +18,19 @@ body {
 }
 
 .card {
-  position: relative;
   width: 25%;
   height: 25%;
+  position: relative;
   border: 2px solid red;
 }
 
-.front
+.front,
 .back {
-  position: absolute;
   width: 100%;
   height: 100%;
+  padding: 20px;
+  position: absolute;
+  border-radius: 5px;
+  background: #1c7ccc;
   border: 2px solid pink
 }
-
-
