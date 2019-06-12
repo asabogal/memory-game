@@ -3,5 +3,5 @@ const cards = document.querySelectorAll('.card')
 cards.forEach(card => card.addEventListener('click', flipCard));
 
 function flipCard() {
-  console.log('clicked')
+  this.classList.toggle('flip')
 };
