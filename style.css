@@ -5,11 +5,20 @@
 }
 
 body {
+  font-family: 'Nanum Gothic', sans-serif;
+  display: flex;
+  flex-direction: column;
   height: 100vh;
   background: rgb(238, 225, 220);  
 }
 
+.title {
+  margin: 20px auto;
+  color: rgb(41, 194, 199)
+}
+
 .board {
+  margin: 50px auto;
   width: 640px;
   height: 640px;
   display: flex;
@@ -18,10 +27,10 @@ body {
 }
 
 .card {
-  width: 25%;
-  height: 25%;
+  width: calc(25% - 4px);
+  height: calc(25% - 4px);
   position: relative;
-  border: 2px solid red;
+  margin: 2px;
 }
 
 .front,
@@ -31,6 +40,6 @@ body {
   padding: 20px;
   position: absolute;
   border-radius: 5px;
-  background: #1c7ccc;
+  background: #b6d19d;
   border: 2px solid pink
 }
