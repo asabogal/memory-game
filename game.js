@@ -1,4 +1,7 @@
 const cards = document.querySelectorAll('.card')
+const images = document.querySelectorAll('.back')
+
+
 
 let hasFlippedCard = false
 let lockBoard = false
@@ -30,7 +33,12 @@ function flipCard() {
   //fliped card must have the same data-name attribute to match
 function checkMatch() {
   let isMatch = (firstCard.dataset.name === secondCard.dataset.name )
+  const gameOver = document.querySelectorAll('.flip').length === 16
   isMatch ? disableCards() : unflipCards()
+
+  if (gameOver) {
+   setTimeout(()=>{endGame()}, 500) 
+  }
 };
 
 function disableCards() {
@@ -67,3 +75,11 @@ function shuffle() {
     card.style.order = randomPos;
   });
 };
+
+function endGame() {
+  images.forEach(image => {
+    image.style.background = '#e9de7e'
+  })
+  setTimeout(()=>{alert ("WOU WIN!!")}, 500)
+};
+
