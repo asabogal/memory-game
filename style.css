@@ -66,7 +66,7 @@ body {
 
 /*  MODAL */
 .modal {
-  display: block;
+  display: none;
   position: fixed;
   z-index: 1;
   left: 0;
@@ -94,16 +94,3 @@ body {
   width: 50%;
   box-shadow: 0px 10px 60px rgba(0, 0, 0, 0.20);
 }
-
-.close-btn {
-  color: rgb(91, 174, 207);
-  float: right;
-  font-size: 30px;
-}
-
-.close-btn:hover,.close-btn:focus {
-  color: rgb(7, 79, 121); 
-  text-decoration: none;
-  cursor: pointer;
-}
-

@@ -1,7 +1,8 @@
 const cards = document.querySelectorAll('.card')
 const images = document.querySelectorAll('.back')
-
-
+const modal = document.querySelector('.modal')
+const yes = document.querySelector('.btn-yes')
+const no = document.querySelector('.btn-no')
 
 let hasFlippedCard = false
 let lockBoard = false
@@ -64,6 +65,13 @@ function resetBoard() {
 
 
 function init() {
+  modal.style.display = 'none'
+  cards.forEach(card => {
+    card.classList.remove('flip')
+  })
+  images.forEach(image => {
+    image.style.background = '#b6d19d'
+  })
   cards.forEach(card => card.addEventListener('click', flipCard));
   shuffle()
 }
@@ -80,6 +88,14 @@ function endGame() {
   images.forEach(image => {
     image.style.background = '#e9de7e'
   })
-  setTimeout(()=>{alert ("WOU WIN!!")}, 500)
+
+  modal.style.display = 'block'
+  
 };
 
+yes.addEventListener('click', init)
+
+no.addEventListener('click', ()=>{
+  modal.style.display = 'none'
+  // add button to start new game
+})
