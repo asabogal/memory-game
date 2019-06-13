@@ -4,7 +4,7 @@ let hasFlippedCard = false
 let lockBoard = false
 let firstCard, secondCard;
 
-cards.forEach(card => card.addEventListener('click', flipCard));
+init ()
 
 function flipCard() {
   if (lockBoard) return;
@@ -29,13 +29,13 @@ function flipCard() {
   //add matching logic
   //fliped card must have the same data-name attribute to match
 function checkMatch() {
-  let isMatch = firstCard.dataset.name === secondCard.dataset.name 
+  let isMatch = (firstCard.dataset.name === secondCard.dataset.name )
   isMatch ? disableCards() : unflipCards()
 };
 
 function disableCards() {
-  firstCard.removeEventListner('click', flipCard)
-  secondCard.removeEventListner('click', flipCard)
+  firstCard.removeEventListener('click', flipCard)
+  secondCard.removeEventListener('click', flipCard)
   resetBoard()
 };
 
@@ -52,4 +52,18 @@ function unflipCards() {
 function resetBoard() {
   [hasFlippedCard, lockBoard] = [false, false];
   [firstCard, secondCard] = [null, null];
+};
+
+
+function init() {
+  cards.forEach(card => card.addEventListener('click', flipCard));
+  shuffle()
+}
+
+
+function shuffle() {
+  cards.forEach(card => {
+    let randomPos = Math.floor(Math.random() * 16);
+    card.style.order = randomPos;
+  });
 };
