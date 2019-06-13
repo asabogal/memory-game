@@ -3,6 +3,7 @@ const images = document.querySelectorAll('.back')
 const modal = document.querySelector('.modal')
 const yes = document.querySelector('.btn-yes')
 const no = document.querySelector('.btn-no')
+const newGame = document.querySelector('.btn-new')
 
 let hasFlippedCard = false
 let lockBoard = false
@@ -66,6 +67,8 @@ function resetBoard() {
 
 function init() {
   modal.style.display = 'none'
+  newGame.style.display = 'none'
+  
   cards.forEach(card => {
     card.classList.remove('flip')
   })
@@ -97,5 +100,7 @@ yes.addEventListener('click', init)
 
 no.addEventListener('click', ()=>{
   modal.style.display = 'none'
-  // add button to start new game
+  newGame.style.display = 'block'
 })
+
+newGame.addEventListener('click', init)
